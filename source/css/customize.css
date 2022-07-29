@@ -1051,6 +1051,8 @@ strong {
 
 /* New */
 
+
+
 .ht-20{
   height: 20px;
 }
@@ -1063,13 +1065,37 @@ strong {
 .presale-image{
   width: 20%;
 }
-.checking-image{
+.procedure-image{
+  width: 30%;
+}
+.kyc-image{
+  width: 35%;
+}
+.card-group{
+  margin-top: 10px;
   width: 70%;
 }
-.presale-image > h3{
+.card-content{
+  width: 100%;
+}
+.card-group-image{
+  width: 80%;
+}
+.card-content > p{
+  margin-top: 20px;
+  font-size: 22px !important;
+}
+.card-group > .card-group-title{
+  margin-top: -25px;
+  width: 100%;
+  font-size: 26px !important;
+}
+.middle-title-image > h3{
   margin-top: -1em;
 }
-
+.row-padding{
+  padding-top: 20px;
+}
 
 .tx-13{
   font-size: 13px !important;
@@ -1077,8 +1103,14 @@ strong {
 .tx-15{
   font-size: 15px !important;
 }
+.tx-16{
+  font-size: 16px !important;
+}
 .tx-18{
   font-size: 18px !important;
+}
+.tx-20{
+  font-size: 20px !important;
 }
 
 .tx-25{
@@ -1102,11 +1134,36 @@ strong {
 .mg-t-50{
   margin-top: 50px;
 }
+.mg-b-50{
+  margin-bottom: 20px;
+}
 .blue-card{
   background-image: url('../images/home-page/blue-background-2.png');
-  padding: 20px 40px;
+  padding: 20px 30px;
+}
+.blue-card:hover {
+  background: var(--primary-color);
+  width: 100%;
+}
+.blue-card .blue-card-title-1{
+  font-size: 18px !important;
+  margin-bottom: 0.5rem!important;
 }
 
+.blue-card .blue-card-title-2{
+  font-weight: 500;
+  font-size: 20px !important;
+  margin-bottom: 0.5rem!important;
+}
+
+.blue-card .blue-card-content{
+  margin-top: 20px;
+  font-size: 15px !important;
+}
+.footer-card {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .div-btn-custom{
   display: grid;  
   height: 100%;
@@ -1118,4 +1175,62 @@ strong {
 .section-pd-40 {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.member-image {
+  width: 80%;
+  object-fit: cover;
+}
+.member-info{
+  width: 80%;
+  text-align: center;
+}
+.member-title{
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+.member-text{
+  color: var(--white-color);
+}
+.member-icon{
+  border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    top: 10px;
+    margin-left: -10%;
+    right: 100;
+    position: absolute;
+}
+
+.partner-image{
+  width: 30%;
+  object-fit: cover;
+  display: block;
+margin-left: auto;
+margin-right: auto 
+  
+}
+
+.section1-image{
+  width: 80%;
+  object-fit: cover;
+  display: block;
+margin-left: auto;
+margin-right: auto 
+  
+}
+
+.footer-menu-link{
+  color: var(--white-color);
+}
+.footer-menu-link:hover{
+  color: var(--primary-color);
+}
+.icon-image {
+  border: 2px solid var(--white-color);
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
 }
