@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Home Page</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/customize.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="home-page.html" class="navbar-brand mx-auto mx-lg-0">
+                    <img src="images/logo.png" class="brand-logo" alt="">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">HOME</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">ABOUT US</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">CONTACT US</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">TEAM</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">PRESALE</a>
+                        </li>
+                    </ul>
+                <div>
+                        
+            </div>
+        </nav>
+
+        <main>
+            <section class="about section-pd-40" id="section_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-12 mt-5 mt-lg-0">
+                            <div class="ht-20"></div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                    <img src="images/Create process.png" class="create-process-image" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="middle-title-image">
+                                    <h3 class="text-white text-center tx-18">SEND US YOUR PROBLEM</br>Solve problems through processes
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center mg-t-50">
+                                <label class="text-white ">Your project information</label>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center mg-t-10">
+                                    <input type="text" name="name" id="name" class="form-control w-50" 
+                                    placeholder="Your Website" required="">
+                            </div>
+                            
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a class="custom-btn btn custom-link mt-3" id="btn-presale">SUBMIT</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="blue-card footer-card align-items-center">
+                    <div class="row">
+                        <div class="col-lg-3 col-12">
+                            <a href="home-page.html" class="navbar-brand mx-auto mx-lg-0">
+                                <img src="images/logo.png" class="brand-logo" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <ul class="footer-menu d-flex flex-wrap">
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">About Us</a></li>
+    
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Team</a></li>
+    
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Whitepaper</a></li>
+    
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link"><img src="images/icons/Layer 3.png" class="img-fluid icon-image" alt=""></a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link"><img src="images/icons/Layer 4.png" class="img-fluid icon-image" alt=""></a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link"><img src="images/icons/Layer 2.png" class="img-fluid icon-image" alt=""></a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-12">
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">© 2022  // iotacess.io</a></li>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </footer>
+        <a href="#section_1" class="message bi-chat-fill arrow-icon custom-link"></a>
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            var btn_presale = document.getElementById("btn-presale");
+            var close_presale = document.getElementById("close-presale");
+            
+            btn_presale.addEventListener("click", function() {
+                var content = document.getElementById("form-presale");
+                content.style.display = "block";
+                btn_presale.style.display = "none";
+            });
+            close_presale.addEventListener("click", function() {
+                var content = document.getElementById("form-presale");
+                content.style.display = "none";
+                btn_presale.style.display = "block";
+            });
+        </script>
+
+    </body>
+</html>
